@@ -66,5 +66,11 @@ namespace cis237assignment4
                     "Model: " + this.model.PadLeft(23) + Environment.NewLine +
                     "Color: " + this.color.PadLeft(23) + Environment.NewLine;
         }
+
+        //Method for comparing objects in the Droid Collection
+        public int CompareTo(object obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -124,5 +124,19 @@ namespace cis237assignment4
             //return the completed string
             return returnString;
         }
+
+        //This method utilizes the Queue and Stack classes to sort the DroidCollection 
+        //based on the model type using a modified bucket sort
+        public void ModelSort()
+        {
+            //Doing the bucket sort
+        }
+
+        //This method utilizes the MergeSort class to perform a merge sort on the DroidCollection
+        //and return the collection sorted by total cost
+        public void CostSort()
+        {
+            //Doing the merge sort
+        }
     }
 }
