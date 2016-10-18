@@ -13,6 +13,20 @@ namespace cis237assignment4
             //Create a new droid collection and set the size of it to 100.
             IDroidCollection droidCollection = new DroidCollection(100);
 
+            //Adding some droids to the collection for testing purposes
+            droidCollection.Add("Carbonite", "Protocol", "Bronze", 20);
+            droidCollection.Add("Carbonite", "Utility", "Silver", false, true, true);
+            droidCollection.Add("Carbonite", "Janitor", "Gold", false, true, true, false, true);
+            droidCollection.Add("Vanadium", "Astromech", "Bronze", false, true, false, true, 10);
+            droidCollection.Add("Vanadium", "Protocol", "Silver", 40);
+            droidCollection.Add("Vanadium", "Utility", "Gold", true, false, true);
+            droidCollection.Add("Quadranium", "Janitor", "Bronze", true, false, true, true, false);
+            droidCollection.Add("Quadranium", "Astromech", "Silver", true, true, true, true, 50);
+            droidCollection.Add("Quadranium", "Protocol", "Gold", 60);
+            droidCollection.Add("Carbonite", "Utility", "Bronze", false, false, true);
+            droidCollection.Add("Vanadium", "Janitor", "Silver", true, false, true, false, true);
+            droidCollection.Add("Quadranium", "Astromech", "Gold", true, true, true, true, 75);
+
             //Create a user interface and pass the droidCollection into it as a dependency
             UserInterface userInterface = new UserInterface(droidCollection);
 
