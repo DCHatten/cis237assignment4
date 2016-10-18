@@ -62,9 +62,9 @@ namespace cis237assignment4
         //Overriden toString method that will return a string representing the basic information for any droid
         public override string ToString()
         {
-            return "Material: " + this.material + Environment.NewLine +
-                    "Model: " + this.model + Environment.NewLine +
-                    "Color: " + this.color + Environment.NewLine;
+            return "Material: " + this.material.PadLeft(20) + Environment.NewLine +
+                    "Model: " + this.model.PadLeft(23) + Environment.NewLine +
+                    "Color: " + this.color.PadLeft(23) + Environment.NewLine;
         }
     }
 }

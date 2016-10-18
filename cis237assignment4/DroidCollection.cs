@@ -115,7 +115,7 @@ namespace cis237assignment4
                     //Create the string now that the total cost has been calculated
                     returnString += "******************************" + Environment.NewLine;
                     returnString += droid.ToString() + Environment.NewLine + Environment.NewLine;
-                    returnString += "Total Cost: " + droid.TotalCost.ToString("C") + Environment.NewLine;
+                    returnString += "Total Cost: " + droid.TotalCost.ToString("n2").PadLeft(10) + " credits" + Environment.NewLine;
                     returnString += "******************************" + Environment.NewLine;
                     returnString += Environment.NewLine;
                 }

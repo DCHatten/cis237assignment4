@@ -60,8 +60,8 @@ namespace cis237assignment4
         public override string ToString()
         {
             return base.ToString() +
-                "Has Fire Extinguisher: " + this.hasFireExtinguisher + Environment.NewLine +
-                "Number Of Ships: " + this.numberOfShips + Environment.NewLine;
+                "Has Fire Extinguisher: " + this.hasFireExtinguisher.ToString().PadLeft(7) + Environment.NewLine +
+                "Number Of Ships: " + this.numberOfShips.ToString().PadLeft(13) + Environment.NewLine;
         }
     }
 }

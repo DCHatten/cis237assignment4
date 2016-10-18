@@ -34,7 +34,7 @@ namespace cis237assignment4
         public override string ToString()
         {
             return base.ToString() +
-                "Number Of Languages: " + this.numberOfLanguages + Environment.NewLine;
+                "Number Of Languages: " + this.numberOfLanguages.ToString().PadLeft(9) + Environment.NewLine;
         }
     }
 }

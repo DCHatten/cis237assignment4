@@ -48,8 +48,8 @@ namespace cis237assignment4
         public override string ToString()
         {
             return base.ToString() +
-                "Has Trash Compactor: " + this.hasTrashCompactor + Environment.NewLine +
-                "Has Vacuum: " + this.hasVacuum + Environment.NewLine;
+                "Has Trash Compactor: " + this.hasTrashCompactor.ToString().PadLeft(9) + Environment.NewLine +
+                "Has Vacuum: " + this.hasVacuum.ToString().PadLeft(18) + Environment.NewLine;
         }
     }
 }

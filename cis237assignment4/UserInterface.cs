@@ -269,7 +269,7 @@ namespace cis237assignment4
                     break;
 
                 case 3:
-                    this.chooseOptions(Color, Material, "Janatorial");
+                    this.chooseOptions(Color, Material, "Janitorial");
                     break;
 
                 case 4:
@@ -316,7 +316,7 @@ namespace cis237assignment4
                     break;
 
                 //If it is a Janatorial
-                case "Janatorial":
+                case "Janitorial":
                     //Get the rest of the options for a Janatorial droid.
                     bool[] janatorialOptions = this.displayAndGetJanatorialOptions();
                     //Add it to the collection
