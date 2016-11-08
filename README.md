@@ -85,7 +85,8 @@ Be sure to think about what the time complexity for the bucket sort will be. Thi
 
 ## Outside Resources Used
 
-None
+StackOverflow used for assistance figuring out how to write a method which can remove null values from an array
+Dietel Book also used as a refernce for Sorting types
 
 ## Known Problems, Issues, And/Or Errors in the Program
 
