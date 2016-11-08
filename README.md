@@ -90,7 +90,9 @@ Dietel Book also used as a refernce for Sorting types
 
 ## Known Problems, Issues, And/Or Errors in the Program
 
-None
+At this time, the Merge Sort function is non-operational, and I was unable to determine the reasoning for that not working.
+
+Additionally, I did not use generics for creating the Stack and Queue classes, however, that sort is functioning correctly at this time.
 
 ## Assignment 3 Description for reference
 
