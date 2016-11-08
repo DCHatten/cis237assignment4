@@ -98,6 +98,19 @@ namespace cis237assignment4
             Console.WriteLine(this.droidCollection.GetPrintString());
         }
 
+        //Method to sort the droids on cost
+        public void CostSort()
+        {
+            droidCollection.CostSort();
+            PrintDroidList();
+        }
+
+        public void ModelSort()
+        {
+            droidCollection.ModelSort();
+            PrintDroidList();
+        }
+
         //Display the Model Selection
         private void displayModelSelection()
         {

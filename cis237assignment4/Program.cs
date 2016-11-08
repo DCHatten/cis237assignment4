@@ -57,12 +57,12 @@ namespace cis237assignment4
 
                     //Choose to Sort the droids by model
                     case 3:
-                        //Sorting the droids by model using the modified bucket sort
+                        userInterface.ModelSort();
                         break;
 
                     //Choose to Sort the droids by total cost
                     case 4:
-                        //Sorting the droids by total cost using a merge sort
+                        userInterface.CostSort();
                         break;
                 }
                 //Re-display the menu, and re-prompt for the choice

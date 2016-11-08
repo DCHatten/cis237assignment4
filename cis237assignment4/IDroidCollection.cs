@@ -17,5 +17,9 @@ namespace cis237assignment4
         
         //Method to get the data for a droid into a nicely formated string that can be output.
         string GetPrintString();
+        //Method to sort the collection based on the total cost
+        void CostSort();
+        //Method to sort the collection based on the model of droids
+        void ModelSort();
     }
 }

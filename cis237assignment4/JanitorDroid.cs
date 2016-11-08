@@ -13,6 +13,11 @@ namespace cis237assignment4
         protected bool hasTrashCompactor;
         protected bool hasVacuum;
 
+        public override string Model
+        {
+            get { return "JanitorDroid"; }
+        }
+
         //Constuctor that takes lots of parameters to create the droid. The base constructor is used to do some of the work
         public JanitorDroid(string Material, string Model, string Color,
             bool HasToolbox, bool HasComputerConnection, bool HasArm, bool HasTrashCompactor, bool HasVacuum) :

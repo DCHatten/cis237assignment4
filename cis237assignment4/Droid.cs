@@ -24,6 +24,8 @@ namespace cis237assignment4
             set { totalCost = value; }
         }
 
+       public abstract string Model { get; }
+
         //Constructor that takes the main 3 parameters shared amongst all 4 types of droids
         public Droid(string Material, string Model, string Color)
         {

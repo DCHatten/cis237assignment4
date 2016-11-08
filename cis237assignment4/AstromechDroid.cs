@@ -16,6 +16,11 @@ namespace cis237assignment4
         //Protected constant for the cost per ship. Children can access this too.
         protected decimal COST_PER_SHIP = 45.00m;
 
+        public override string Model
+        {
+            get { return "AstromechDroid"; }
+        }
+
         //Constructor that uses the Base Constuctor to do most of the work.
         public AstromechDroid(string Material, string Model, string Color,
             bool HasToolbox, bool HasComputerConnection, bool HasArm, bool HasFireExtinquisher, int NumberOfShips) :

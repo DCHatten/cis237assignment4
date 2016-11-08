@@ -17,6 +17,11 @@ namespace cis237assignment4
         //A constant that can be used in this class or any child classes
         protected const decimal COST_PER_OPTION = 35.00m;
 
+        public override string Model
+        {
+            get { return "UtilityDroid"; }
+        }
+
         //Constructor that takes the standard parameters, and ones specific to this droid.
         //Calls the base constructor to do some of the work already written in the droid class.
         public UtilityDroid(string Material, string Model, string Color, bool HasToolbox, bool HasComputerConnection, bool HasArm) : base(Material, Model, Color)

@@ -129,14 +129,43 @@ namespace cis237assignment4
         //based on the model type using a modified bucket sort
         public void ModelSort()
         {
-            //Doing the bucket sort
+            RemoveNull();
+            BucketSort.Sort(droidCollection);
         }
 
         //This method utilizes the MergeSort class to perform a merge sort on the DroidCollection
         //and return the collection sorted by total cost
         public void CostSort()
         {
-            //Doing the merge sort
+            RemoveNull();
+            MergeSort.SortAndMerge(droidCollection);
+        }
+        public void RemoveNull()
+        {
+            IDroid[] temp = new IDroid[1];
+            int i = 0;
+            foreach (IDroid droid in droidCollection)
+            {
+                if (droid != null)
+                {
+                    if (i < temp.Length)
+                    {
+                        temp[i] = droid;
+                        i++;
+                    }
+                    else
+                    {
+                        Array.Resize<IDroid>(ref temp, temp.Length + 1);
+                        temp[i] = droid;
+                        i++;
+                    }
+                }
+            }
+            droidCollection = new IDroid[temp.Length];
+            for (int k = 0; k < temp.Length; k++)
+            {
+                droidCollection[k] = temp[k];
+            }
         }
     }
 }

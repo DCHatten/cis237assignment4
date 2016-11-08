@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AstromechDroid.cs" />
+    <Compile Include="BucketSort.cs" />
     <Compile Include="Droid.cs" />
     <Compile Include="DroidCollection.cs" />
     <Compile Include="IDroid.cs" />
